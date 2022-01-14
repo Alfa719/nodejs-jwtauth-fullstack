@@ -1,0 +1,22 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkFsZmEgQ29kZSIsImVtYWlsIjoiYWxmYUBleGFtcGxlLmNvbSIsImlhdCI6MTY0MjE4NzAwOCwiZXhwIjoxNjQyMTg3MDIzfQ.hSCSF5qaCf_KJH1JOxvHxbKdx7ytoIUmzOUwG5_9Z5c
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+{
+    "name": "M Shobri",
+    "email": "shobri@example.com",
+    "password": "shobri123",
+    "confirmPassword": "shobri123"
+}
+###
+POST http://localhost:5000/users/login
+Content-Type: application/json
+{
+    "email": "alfa@example.com",
+    "password": "alfa123"
+}
+###
+GET http://localhost:5000/users/token
+###
+GET http://localhost:5000/users/logout
