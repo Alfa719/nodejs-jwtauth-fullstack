@@ -2,6 +2,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 
 import db from "./config/Database.js";
 import usersRouter from "./routes/users.js";
@@ -26,6 +27,7 @@ try {
 // Terima data format json
 app.use(express.json());
 app.use(cookieParser());
+
 
 // Prefix route
 app.use('/users', usersRouter);
