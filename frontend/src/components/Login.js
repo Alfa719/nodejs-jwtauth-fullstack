@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Login = () => {
+const Login = () => {
     return (
         <section className="hero has-background-grey-light is-fullheight is-fullwidth">
             <div className="hero-body">
